@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: black;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* utama */
+.utama,
+.acara,
+.gift,
+.turut {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-content: center;
+}
+.utama img,
+.acara img,
+.gift img,
+.turut img {
+    max-width: auto;
+    height: 100vh;
+}
+
+/* foto */
+.foto,
+.acarax,
+.kado,
+.mengundang {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.foto img {
+    height: 260px;
+    border-radius: 50%;
+    border: 5px solid red;
+}
+
+.foto p {
+    font-family: "Sacramento", cursive;
+    font-size: 2em;
+    color: yellow;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.foto span {
+    color: white;
+}
+.foto a {
+    background: red;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.foto a:hover {
+    background: yellow;
+    color: black;
+}
+
+/* acarax */
+.acarax .akad,
+.acarax .resepsi {
+    background: #e8cd7b;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+.acarax h3 {
+    font-family: "Sacramento", cursive;
+    color: #410f06;
+    font-size: 2.4em;
+}
+.acarax span {
+    font-weight: 600;
+}
+.acarax p {
+    color: #410f06;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+.acarax a, 
+.kado a,
+.mengundang a {
+    background: red;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.acarax a:hover,
+.kado a:hover,
+.mengundang a:hover {
+    background: yellow;
+    color: black;
+}
+.acarax #a {
+    background: #410f06;
+    color: #e8cd7b;
+}
+
+/* mengundang */
+.mengundang h3 {
+    color: #e8cd7b;
+    font-family: "Sacramento", cursive;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.mengundang p {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    background: #e8cd7b;
+    color: #410f06;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* kado */
+.kado, 
+.mengundang {
+    text-align: center;
+}
+.kado h3 {
+    margin-bottom: 10px;
+    color: #e8cd7b;
+    font-family: "Sacramento", cursive;
+    font-size: 2.3em;
+}
+.kado img {
+    width: 240px;
+    margin-bottom: 20px;
+}
