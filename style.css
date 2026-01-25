@@ -5,8 +5,8 @@
 body {
     font-family: "Work Sans", sans-serif;
     font-size: 14px;
-    background-image: url(img/utama.png);
-    background-position: center;
+    background-image: url(img/utama.jpg);
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
