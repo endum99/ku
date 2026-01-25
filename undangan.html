@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pernikahku</title>
+    <link rel="shortcut icon" href="img/angsa.png" type="image/x-icon">
+    <link rel="stylesheet" href="undangan.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- musik -->
+    <div class="musik">
+        <audio id="bgMusic" loop>
+            <source src="img/lagu.mp3" type="audio/mpeg" />
+        </audio>
+        <button id="musicToggle">🔊 Musik</button>
+    </div>
+
+    <div class="kembali">
+        <a href="index.html"> <span>&#127872</span> Kembali</a>
+    </div>
+
+    <!-- catatan -->
+    <div id="catatan">
+        <div class="dalil">
+            <p>maka nikahilah perempuan (lain) yang kamu senangi: dua, tiga atau empat. Tetapi jika kamu khawatir tidak akan mampu berlaku adil, maka (nikahilah) seorang saja <br> <b>(Annisa:3)</b></p>
+        </div>
+        
+        <div class="pria">
+            <img src="img/pria.png" alt="pria">
+            <p>Pria Tampan</p>
+        </div>
+
+        <div class="wanita">
+            <img src="img/wanita.png" alt="pria">
+            <p>Wanita Cantik</p>
+        </div>
+
+    </div>
+
+    <!-- acara -->
+    <div class="acara" id="acara">
+        <div class="akad">
+            <h3>Akad</h3>
+            <p><b>Hari & Tanggal</b> <br>Minggu, 28 Juni 2026 <br> <b>Waktu</b><br>09.00 WIB - 11.00 WIB <b>Tempat</b><br>Kp. Bali RT 001 RW 004</p> <br>
+            <a href="https://maps.app.goo.gl/1bcsdeFWHmg4cmcn7" target="_blank">Lihat Lokasi</a>
+        </div>
+        <div class="akad">
+            <h3>Resepsi</h3>
+            <p><b>Hari & Tanggal</b> <br>Minggu, 28 Juni 2026 <br> <b>Waktu</b><br>13.00 WIB - 22.00 WIB <b>Tempat</b><br>Kp. Bali RT 001 RW 004</p> <br>
+            <a href="https://maps.app.goo.gl/1bcsdeFWHmg4cmcn7" target="_blank">Lihat Lokasi</a>
+        </div>
+    </div>
+
+    <!-- kado -->
+    <div class="kado">
+        <h2>Kado Pernikahan</h2>
+        <img src="img/qris.jpeg" alt="qris">
+    </div>
+
+
+    <script>
+        const bgMusic = document.getElementById("bgMusic");
+        const toggleBtn = document.getElementById("musicToggle");
+
+        let isPlaying = false;
+
+        toggleBtn.addEventListener("click", () => {
+        if (isPlaying) {
+        bgMusic.pause();
+        toggleBtn.textContent = "🔇 Musik";
+        } else {
+        bgMusic.play();
+        toggleBtn.textContent = "🔊 Musik";
+        }
+        isPlaying = !isPlaying;
+        });
+
+        // Optional: Prevent form submission reload
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Pesan Anda berhasil dikirim!");
+        this.reset();
+        });
+    </script>
+</body>
+</html>

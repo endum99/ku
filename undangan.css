@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 14px;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* musik */
+.musik {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.musik button {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/* kembali */
+.kembali {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.kembali a {
+    background: #ddd;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* acara */
+.acara {
+    background-image: url(img/acara.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    place-items: center;
+    gap: 20px;
+    padding: 30px;
+    text-align: center;
+}
+.acara .akad {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    width: 450px;
+    border: 3px solid green;
+}
+.acara h3 {
+    font-family: "Sacramento", cursive;
+    color: green;
+    font-size: 3em;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+}
+.acara p {
+    margin-bottom: 5px;
+}
+.acara a {
+    background: green;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px  solid black;
+}
+
+/* catatan */
+#catatan {
+    background-image: url(img/riwayat.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas:  'pria wanita''dalil dalil';
+    gap: 20px;
+    text-align: center;
+    place-content: center;
+    padding: 20px;
+}
+.dalil {
+    grid-area: dalil;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #387186;
+}
+.pria {
+    grid-area: pria;
+}
+.wanita {
+    grid-area: wanita;
+}
+.pria p, 
+.wanita p {
+    font-family: "Sacramento", cursive;
+    font-size: 2.6em;
+    font-weight: 650;
+    color: #387186;
+}
+.wanita img,
+.pria img {
+    border-radius: 50%;
+    border: 3px solid #387186;
+
+}
+.dalil p b {
+    letter-spacing: 1px;
+}
+
+/* kado */
+.kado {
+    background-image: url(img/kado.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+}
+.kado h2 {
+    color: #ef3d4d;
+    font-family: "Sacramento", cursive;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px white;
+}
+.kado img {
+    width: 500px;
+    border: 3px solid #ef3d4d ;
+    border-radius: 20px;
+}
+
+@media (max-width:576px) {
+    #catatan {
+        grid-template-areas:  'pria pria' 'wanita wanita''dalil dalil';
+    }
+    .dalil {
+        width: 350px;
+    }
+    .acara .akad {
+        width: 350px;
+    }
+    .kado img {
+        width: 350px;
+    }
+}
