@@ -144,9 +144,7 @@ body {
     #catatan {
         grid-template-areas: 'dalil dalil' 'pria pria' 'wanita wanita';
     }
-    .acara .akad {
-        width: 100%;
-    }
+
     .kado img {
         width: 90%;
     }
