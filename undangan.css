@@ -10,7 +10,7 @@ body {
 /* musik */
 .musik {
     position: fixed;
-    top: 20px;
+    top: 45%;
     right: 20px;
 }
 .musik button {
@@ -22,8 +22,8 @@ body {
 /* kembali */
 .kembali {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 55%;
+    right:20px;
 }
 .kembali a {
     background: #ddd;
@@ -53,8 +53,8 @@ body {
     padding-top: 20px;
     padding-bottom: 30px;
     border-radius: 10px;
-    width: 450px;
     border: 3px solid green;
+    width: 78%;
 }
 .acara h3 {
     font-family: "Sacramento", cursive;
@@ -82,7 +82,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-areas:  'pria wanita''dalil dalil';
+    grid-template-areas: 'dalil dalil' 'pria wanita';
     gap: 20px;
     text-align: center;
     place-content: center;
@@ -135,22 +135,19 @@ body {
     text-shadow: 1px 1px white;
 }
 .kado img {
-    width: 500px;
     border: 3px solid #ef3d4d ;
-    border-radius: 20px;
+    border-radius: 30px;
+    width: 30%;
 }
 
 @media (max-width:576px) {
     #catatan {
-        grid-template-areas:  'pria pria' 'wanita wanita''dalil dalil';
-    }
-    .dalil {
-        width: 350px;
+        grid-template-areas: 'dalil dalil' 'pria pria' 'wanita wanita';
     }
     .acara .akad {
-        width: 350px;
+        width: 100%;
     }
     .kado img {
-        width: 350px;
+        width: 90%;
     }
 }
