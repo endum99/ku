@@ -37,17 +37,25 @@ body {
 
 /* acara */
 .acara {
-    background-image: url(img/acara.png);
+    background-image: url(img/acara.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    grid-template-areas: 'akad resepsi';
     place-items: center;
     gap: 20px;
     text-align: center;
+    padding: 20px;
 }
-.acara .akad {
+.akad {
+    grid-area: akad;
+}
+.resepsi {
+    grid-area: resepsi;
+}
+.acara .akad, 
+.acara .resepsi {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -74,7 +82,7 @@ body {
 
 /* catatan */
 #catatan {
-    background-image: url(img/riwayat.png);
+    background-image: url(img/riwayat.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,7 +125,7 @@ body {
 
 /* kado */
 .kado {
-    background-image: url(img/kado.png);
+    background-image: url(img/kado.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +137,6 @@ body {
     font-family: "Sacramento", cursive;
     font-size: 2.6em;
     letter-spacing: 1px;
-    text-shadow: 1px 1px white;
 }
 .kado img {
     border: 3px solid #ef3d4d ;
@@ -140,6 +147,10 @@ body {
 @media (max-width:576px) {
     #catatan {
         grid-template-areas: 'dalil dalil' 'pria pria' 'wanita wanita';
+    }
+
+    .acara {
+        grid-template-areas: 'akad akad' 'resepsi resepsi';
     }
 
     .kado img {
